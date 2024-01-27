@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>verkauf</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+</head>
+<body id="bookingPage">
+  <!-- navbar-->
+  <!--
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">verkauf</a>
+      </div>
+    </nav>
+  </div>
+  -->
+  <!--content-->
+  <div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" >
+          OVERVIEW
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="index.html">Dashboard</a></li>
+          <li><a class="dropdown-item" href="E-Commerce.html">E-Commerce</a></li>
+          <li><a class="dropdown-item" href="booking.html">Booking</a></li>
+          <li><a class="dropdown-item" href="#">Analytics</a></li>
+          <li><a class="dropdown-item" href="#">Banking</a></li>
+          <li><a class="dropdown-item" href="#">File</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          MANAGEMENT
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="products.html">Products</a></li>
+          <li><a class="dropdown-item" href="services.html">Services</a></li>
+          <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+          <li><a class="dropdown-item" href="serviceBookings.html">Service Bookings</a></li>
+          <li><a class="dropdown-item" href="#">Invoice</a></li>
+          <li><a class="dropdown-item" href="#">Users</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--end of sidebar-->
+    
+    <!-- Main Content....booking,  -->
+    <div class="col-md-10 main-content">
+      <!--first-->
+      <div class="container">
+        <div>
+         <h1>Create booking</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <iframe src="" frameborder="5">
+                profile
+              </iframe>
+              <h5>Allowed *.jpeg, *.jpg, *.png, *.gif
+                max size of 3 Mb</h5>
+              <button>email verified</button>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class=" container card ">
+              
+             <!--input form-->
+              <form>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-1">
+                      <label for="firstName" class="form-label">service location</label>
+                      <select class="form-select" id="servicelocation" name="servicelocation" required>
+                        <option value="" disabled selected>Choose service location</option>
+                        <option value="inclinic">In clinic</option>
+                        <option value="mobileservices">Mobile services</option>
+                        <option value="Mercy" disabled>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="phoneNumber" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="address" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="attendant" class="form-label">Attendant</label>
+                      <select class="form-select" id="attendant" name="attendant" required>
+                        <option value="" disabled selected>Choose attendant</option>
+                        <option value="Any">Any</option>
+                        <option value="Boaz">Boaz</option>
+                        <option value="lawrence">lawrence</option>
+                        <option value="Mercy" disabled>Mercy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="paymentStatus" class="form-label">Payment Status</label>
+                      <select class="form-select" id="paymentStatus" name="paymentStatus" required>
+                        <option value="" disabled selected>Select payment status</option>
+                        <option value="paid">Paid</option>
+                        <option value="pending">Pending</option>
+                        <option value="canceled">Refunded</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-2">
+                      <label for="serviceStatus" class="form-label">Service Status</label>
+                      <select class="form-select" id="serviceStatus" name="serviceStatus" required>
+                        <option value="" disabled selected>Service status</option>
+                        <option value="paid">completed</option>
+                        <option value="pending">waiting</option>
+                        <option value="canceled">Canceled</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!--date-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="datetimepicker">Select Date and Time:</label>
+                      <input type="datetime-local" class="form-control" id="datetimepicker" name="datetimepicker" required/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-1">
+                      <label for="serviceSelect" class="form-label">Select Service</label>
+                      <select class="form-select" id="serviceSelect" name="serviceSelect" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="service1">vitamin c</option>
+                        <option value="service2">vitamin b complex</option>
+                        <option value="service3">glutathione</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              
+                <button type="submit" class="btn btn-primary mb-3">Create Booking</button>
+              </form>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    <!--end of main content-->
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+  $(function () {
+    $('#datetimepicker').datetimepicker({
+      format: 'YYYY-MM-DD HH:mm',
+      icons: {
+        time: 'fa fa-clock-o',
+        date: 'fa fa-calendar',
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down',
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-crosshairs',
+        clear: 'fa fa-trash',
+        close: 'fa fa-times'
+      }
+    });
+  });
+</script>
+</body>
+</html>
